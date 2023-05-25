@@ -1,0 +1,29 @@
+.footer{
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.footer__content{
+    display: flex;
+    justify-content: center;
+    column-gap: 64px;
+
+}
+.footer__copyright{
+    width: 213px;
+}
+
+.footer-copyright__copyright{
+    font-family: 'Inconsolata';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.05;
+}
+
+.footer__links{
+    display: flex;
+    flex-wrap: wrap;
+    width: 384px;
+    column-gap: 48px;
+    row-gap: 32px;
+}

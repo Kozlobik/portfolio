@@ -1,0 +1,86 @@
+.skill-card {
+    width: 200px;
+    border-radius: 10px;
+    background-color: $cardColor;
+    padding-top: 61px;
+    padding-bottom: 51px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 16px;
+
+    &:hover{
+    .skill-card__item{
+        transition: fill 400ms;
+    }
+    .card-btn{
+    transition: background-color 400ms;
+    }
+    .skill-card__item--html{
+    fill: $cardSkillsColorHTML; 
+    }
+    .skill-card__item--css{
+        fill: $cardSkillsColorCSS;
+    }
+    .skill-card__item--js{
+        fill: $cardSkillsColorJavaScript;
+    }
+    .skill-card__item--scss{
+        fill: $cardSkillsColorSCSS;
+    }
+    .skill-card__item--git{
+        fill: $cardSkillsColorGit;
+    }
+    .card-btn--html{
+        box-shadow: inset 0 0 10px $cardSkillsColorHTML, 0 0 10px $cardSkillsColorHTML;
+        border: 2px solid $cardSkillsColorHTML;
+
+        transition: 400ms;
+    }
+    .card-btn--css{
+        box-shadow: inset 0 0 10px $cardSkillsColorCSS, 0 0 10px $cardSkillsColorCSS;
+        border: 2px solid $cardSkillsColorCSS;
+
+        transition: 400ms;
+    }
+    .card-btn--js{
+        box-shadow: inset 0 0 10px $cardSkillsColorJavaScript, 0 0 10px $cardSkillsColorJavaScript;
+        border: 2px solid $cardSkillsColorJavaScript;
+
+        transition: 400ms;
+    }
+    .card-btn--scss{
+        box-shadow: inset 0 0 10px $cardSkillsColorSCSS, 0 0 10px $cardSkillsColorSCSS;
+        border: 2px solid $cardSkillsColorSCSS;
+
+        transition: 400ms;
+    }
+    .card-btn--git{
+        box-shadow: inset 0 0 10px $cardSkillsColorGit, 0 0 10px $cardSkillsColorGit;
+        border: 2px solid $cardSkillsColorGit;
+
+        transition: 400ms;
+    }
+    }
+        }
+
+.skill-card__item{
+    transition: fill 400ms;
+}
+.card-btn {
+    height: 37px;
+    min-width: 123px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    transition: background-color 400ms;
+    color: #fff;
+    font-family: 'Arial';
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 37px;
+    cursor: pointer;
+    transition: box-shadow 400ms;
+    transition: border 400ms;
+}

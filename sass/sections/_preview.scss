@@ -1,0 +1,15 @@
+.preview{
+    padding-top: 72.5px;
+    padding-bottom: 72.5px;
+
+
+}
+.preview__content{
+    display: flex;
+    column-gap: 137px;
+    align-items: center;
+    
+    &>*{
+        flex-shrink: 0;
+    }
+}

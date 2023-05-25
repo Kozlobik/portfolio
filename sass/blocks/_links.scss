@@ -1,0 +1,45 @@
+.context-link {
+    display: inline-block;
+    height: 39px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #32312E;
+    font-family: 'Inconsolata';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 39px;
+    border-radius: 4px;
+}
+
+.context-link:hover{
+background-color: #393939;
+}
+.context-link:active{
+background-color: $headingColor;
+transition: 70ms;
+}
+
+
+.social-link{
+    display: flex;
+column-gap: 16px;
+align-items: center;
+color: #5b51ca;
+
+
+    &__img{
+        height: 32px;
+        width: 32px;
+    }
+
+    a{
+        font-family: 'Inconsolata';
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 1.04;
+    }
+
+    &:nth-child(3){
+        margin-right: 60px;
+    }
+}

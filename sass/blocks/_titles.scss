@@ -1,0 +1,33 @@
+.main-title{
+    font-family: 'Inconsolata';
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 1.05;
+    color: $headingColor;
+}
+
+.context-title{
+    font-family: 'Inconsolata';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.06;
+    color: $headingColor;
+}
+.main-subtitle{
+    font-family: 'Inconsolata';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.06;
+    color: $textColor;
+}
+.wrapper-section-title {
+    margin-bottom: 32px;
+    text-align: center;
+}
+.wrapper-card-title {
+    margin-bottom: 16px;
+}
+
+.wrapper-footer-title{
+    margin-bottom: 16px;
+}
