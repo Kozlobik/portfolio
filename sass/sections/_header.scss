@@ -1,12 +1,23 @@
 .header {
 padding-top: 20.5px;
 padding-bottom: 20.5px;
+
+@media (max-width: 1244px) {
+padding-bottom: 16px;
+padding-top: 16px;
+    }
 }
 
 .header__content {
 display: flex;
 column-gap: 525px;
 padding-left: 10px;
+
+@media (max-width: 1244px) {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    }
 }
 .menu-link {
     font-family: 'Inconsolata';

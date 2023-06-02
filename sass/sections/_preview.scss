@@ -3,6 +3,10 @@
     padding-bottom: 72.5px;
 
 
+    @media (max-width: 1244px) {
+padding-top: 128px;
+padding-bottom: 128px;
+        }
 }
 .preview__content{
     display: flex;
@@ -12,4 +16,17 @@
     &>*{
         flex-shrink: 0;
     }
+
+    @media (max-width: 1244px) {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 64px;
+
+        }
+}
+
+.preview__avatar {
+    position: relative;
+    width: 620px;
+    height: 575px;
 }

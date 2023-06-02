@@ -3,6 +3,10 @@
 }
 .info__wrapper-main-title {
     margin-bottom: 13px;
+
+    @media (max-width: 1244px) {
+margin-bottom: 9px;
+        }
 }
 .info__wrapper-main-subtitle {
     margin-bottom: 14px;
@@ -12,9 +16,4 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 1.05;
-}
-.info__avatar {
-    position: relative;
-    width: 620px;
-    height: 575px;
 }
