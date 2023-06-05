@@ -1,5 +1,11 @@
 .footer .wrapper-logo{
     margin-bottom: 16px;
+
+    @media(max-width: 1244px){
+width: 160px;
+margin: 0 auto 16px;
+
+    }
 }
 
 .logo--footer svg{

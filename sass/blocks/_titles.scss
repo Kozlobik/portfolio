@@ -30,4 +30,8 @@
 
 .wrapper-footer-title{
     margin-bottom: 16px;
+
+    @media(max-width: 1244px){
+        text-align: center;
+    }
 }

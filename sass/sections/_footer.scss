@@ -8,9 +8,18 @@
     justify-content: center;
     column-gap: 64px;
 
+    @media(max-width: 1244px){
+        flex-direction: column;
+        align-items: center;
+        row-gap: 64px;
+    }
 }
 .footer__copyright{
     width: 213px;
+
+    @media(max-width: 1244px){
+width: 339px;
+    }
 }
 
 .footer-copyright__copyright{
