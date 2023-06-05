@@ -11,7 +11,11 @@
 .my-skills__row-cards {
     display: flex;
     column-gap: 16px;
-    width: 1064px;
-    margin: 0 auto;
+justify-content: center;
 
+@media(max-width: 1244px){
+    width: 632px;
+    flex-wrap: wrap;
+    row-gap: 16px;
+}
 }

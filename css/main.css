@@ -318,8 +318,17 @@ body.active {
   display: flex;
   -webkit-column-gap: 16px;
           column-gap: 16px;
-  width: 1064px;
-  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media (max-width: 1244px) {
+  .my-skills__row-cards {
+    width: 632px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    row-gap: 16px;
+  }
 }
 
 .my-works {
