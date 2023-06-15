@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700&family=Roboto+Mono:wght@700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700&family=Roboto+Mono:wght@700&display=swap');
 
 html {
     min-height: 100vh; /* sticky footer */
@@ -58,18 +57,10 @@ html {
     width: 632px;
     }
     
-    // /* Mobile */
-    // @media (max-width: 899px) {
-    // width: 768px;
-    // }
-    
-    // /* Mobile XS */
-    // @media (max-width: 767px) {
-    // width: 320px;
-    // }
-    // }
-    
-    /* Utility */
+    /* Mobile */
+    @media (max-width: 631px) {
+    width: 413px;
+    }
     
     .none {
     display: none !important;

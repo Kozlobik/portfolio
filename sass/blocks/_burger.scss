@@ -1,0 +1,14 @@
+.burger {
+width: 36px;
+height: 24px;
+}
+.burger__line {
+width: 36px;
+height: 4px;
+margin-bottom: 6px;
+background-color: $textColor;
+
+&:last-child{
+    margin-bottom: 0;
+}
+}
