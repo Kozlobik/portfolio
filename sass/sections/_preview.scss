@@ -34,4 +34,9 @@ padding-bottom: 128px;
     position: relative;
     width: 620px;
     height: 575px;
+
+    @media (max-width: 631px) {
+width: 413px;
+height: 430px;
+        }
 }
