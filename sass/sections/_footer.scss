@@ -35,4 +35,9 @@ width: 339px;
     width: 384px;
     column-gap: 48px;
     row-gap: 32px;
+
+    @media(max-width: 631px){
+flex-direction: column;
+align-items: center;
+    }
 }

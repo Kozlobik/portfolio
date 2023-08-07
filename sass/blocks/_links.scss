@@ -26,6 +26,9 @@ column-gap: 16px;
 align-items: center;
 color: #5b51ca;
 
+@media(max-width: 631px){
+    min-width: 204px;
+}
 
     &__img{
         height: 32px;
@@ -41,5 +44,19 @@ color: #5b51ca;
 
     &:nth-child(3){
         margin-right: 60px;
+        
+        @media(max-width: 631px){
+            margin-right: 0;
+            order: 2;
+        }
     }
-}
+
+    @media(max-width: 631px){
+    &:nth-child(2){
+        order: 3;
+    }
+
+    &:nth-child(4){
+        order: 4;
+    }
+}}

@@ -9,6 +9,17 @@
     align-items: center;
     row-gap: 16px;
 
+
+    @media(max-width: 631px){
+width: 285px;
+flex-direction: row;
+padding-top: 14px;
+padding-bottom: 14px;
+padding-left: 32px;
+column-gap: 25px;
+    }
+
+
     &:hover{
     .skill-card__item{
         transition: fill 400ms;
@@ -62,7 +73,7 @@
         transition: 400ms;
     }
     }
-        }
+}
 
 .skill-card__item{
     transition: fill 400ms;
@@ -83,4 +94,19 @@
     cursor: pointer;
     transition: box-shadow 400ms;
     transition: border 400ms;
+
+    @media(max-width: 631px){
+height: 30px;
+line-height: 30px;
+font-size: 24px;
+            }
 }
+
+
+.skill-card__img svg{
+
+    @media(max-width: 631px){
+width: 32px;
+height: 32px;
+    }
+    }

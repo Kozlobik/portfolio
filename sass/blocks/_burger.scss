@@ -1,14 +1,32 @@
 .burger {
 width: 36px;
 height: 24px;
+z-index: 4;
+transform: translateY(0);
+}
+
+.burger.active {
+transform: translateY(-100%);
 }
 .burger__line {
 width: 36px;
 height: 4px;
 margin-bottom: 6px;
 background-color: $textColor;
+transition: transform 451ms;
 
 &:last-child{
     margin-bottom: 0;
 }
+}
+.burger__line--first.active{
+    transform: rotate(45deg) translateY(14px);
+}
+
+.burger__line--second.active{
+    transform: scale(0);
+}
+
+.burger__line--third.active{
+    transform: rotate(-45deg) translateY(-14px);
 }
