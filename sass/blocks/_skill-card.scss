@@ -1,14 +1,36 @@
 .skill-card {
-    width: 200px;
+    position: relative;
+    min-width: 200px;
+    min-height: 300px;
     border-radius: 10px;
-    background-color: $cardColor;
-    padding-top: 61px;
-    padding-bottom: 51px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 16px;
+    // background-color: $cardColor;
 
+    .skill-card__front,
+    .skill-card__back{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    transition: transform 1000ms;
+    border-radius: 10px;
+    }
+
+
+    .skill-card__front{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 16px;
+        transform: perspective(600px) rotateY(0deg);
+        background-color: $cardColor;
+    }
+
+    .skill-card__back{
+background-color: goldenrod;
+transform: perspective(600px) rotateY(180deg);
+    }
 
     @media(max-width: 631px){
 width: 285px;
@@ -18,6 +40,7 @@ padding-bottom: 14px;
 padding-left: 32px;
 column-gap: 25px;
     }
+
 
 
     &:hover{
@@ -72,6 +95,18 @@ column-gap: 25px;
 
         transition: 400ms;
     }
+
+//Поворот карточки.
+    .skill-card__front{
+        transform: perspective(600px) rotateY(180deg);
+        
+        } 
+        
+    .skill-card__back{
+        transform: perspective(600px) rotateY(0deg);
+        
+        
+        }
     }
 }
 
@@ -110,3 +145,4 @@ width: 32px;
 height: 32px;
     }
     }
+
