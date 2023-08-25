@@ -95,21 +95,24 @@ top: -100vh;
     transition: transform 500ms;
 }
 
-.header__mobile-menu-list.active,
-.fade-block.active{
-transform: translateY(0);
+.header__mobile-menu-list.active{
+    transform: translateY(0);
 }
 
-.fade-block{
-    @media (max-width: 631px) {
+.fade-block-header{
+    backdrop-filter: blur(20px);
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
         height: 100vh;
-        background-color: rgba(0, 0, 0, 0.99);
+        background-color: rgba(0, 0, 0, 0.362);
         transform: translateY(-100%);
         transition: transform 500ms;
-        }
-
+        z-index: 2;
 }
+
+.fade-block-header.active{
+transform: translateY(0);
+}
+

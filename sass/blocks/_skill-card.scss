@@ -3,7 +3,7 @@
     min-width: 200px;
     min-height: 300px;
     border-radius: 10px;
-    // background-color: $cardColor;
+    transition: all 0.5;
 
     .skill-card__front,
     .skill-card__back{
@@ -25,20 +25,27 @@
         row-gap: 16px;
         transform: perspective(600px) rotateY(0deg);
         background-color: $cardColor;
+
+        @media(max-width: 631px){
+            flex-direction: row;
+            padding-top: 14px;
+            padding-bottom: 14px;
+            padding-left: 32px;
+            column-gap: 25px;
+                }
     }
 
     .skill-card__back{
-background-color: goldenrod;
-transform: perspective(600px) rotateY(180deg);
+background-color: #7125ff;
+transform: perspective(600px) rotateY(-180deg);
     }
+
+
 
     @media(max-width: 631px){
 width: 285px;
-flex-direction: row;
-padding-top: 14px;
-padding-bottom: 14px;
-padding-left: 32px;
-column-gap: 25px;
+min-height: 60px;
+
     }
 
 
@@ -46,6 +53,8 @@ column-gap: 25px;
     &:hover{
     .skill-card__item{
         transition: fill 400ms;
+        margin-top: 50vh;
+        margin-left: 50vh;
     }
     .card-btn{
     transition: background-color 400ms;
@@ -96,17 +105,6 @@ column-gap: 25px;
         transition: 400ms;
     }
 
-//Поворот карточки.
-    .skill-card__front{
-        transform: perspective(600px) rotateY(180deg);
-        
-        } 
-        
-    .skill-card__back{
-        transform: perspective(600px) rotateY(0deg);
-        
-        
-        }
     }
 }
 
@@ -121,7 +119,7 @@ column-gap: 25px;
     border-radius: 5px;
     border: 2px solid transparent;
     transition: background-color 400ms;
-    color: #fff;
+    color: #ffffff;
     font-family: 'Arial';
     font-weight: 400;
     font-size: 28px;
@@ -146,3 +144,54 @@ height: 32px;
     }
     }
 
+.skill-card-cross{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+.skill-card.active{
+    &{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotateY(0deg);
+        min-width: 500px;
+        min-height: 400px;
+        z-index: 300;
+        transition: top 500ms, left 500ms;
+    } 
+
+    .skill-card__front{
+        transform: perspective(600px) rotateY(180deg) scale(1);
+        
+        } 
+        
+    .skill-card__back{
+        transform: perspective(600px) rotateY(0deg) scale(1);
+        
+        
+        }
+
+
+}
+
+.fade-block-skills{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.362);
+    transform: translateY(-100%);
+    transition: transform 500ms;
+    z-index: 11;
+    backdrop-filter: blur(20px);
+}
+
+.fade-block-skills.active{
+transform: translateY(0);
+}
