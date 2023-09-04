@@ -595,7 +595,7 @@ body.active {
   width: 371px;
   overflow: hidden;
   border-radius: 30% 70% 70% 30%/30% 17% 83% 70%;
-  z-index: 3;
+  z-index: 4;
   position: absolute;
 }
 @media (max-width: 631px) {
@@ -631,6 +631,12 @@ body.active {
   background-color: #F0E3CA;
   z-index: 1;
   transform: rotate(-24deg);
+}
+
+.avatar__shadow--third {
+  background-color: rgba(200, 0, 255, 0.7294117647);
+  z-index: 3;
+  transform: rotate(-79deg);
 }
 
 .skill-card {
@@ -773,10 +779,10 @@ body.active {
 }
 
 .skill-card.active {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) rotateY(0deg);
+  transform: translate(-50%, -50%) rotateY(0deg) !important;
   min-width: 500px;
   min-height: 400px;
   z-index: 300;

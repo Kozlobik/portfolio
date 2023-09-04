@@ -44,13 +44,15 @@ cross.forEach(function(item){
     item.addEventListener('click', function(event){
         event.target.closest('.skill-card').classList.remove('active')
         fadeBlockSkills.classList.remove('active')
+        document.querySelector('body').classList.remove('active')
     })
 })
 
 cardBtn.forEach(function(item){
     item.addEventListener('click', function(event){
-event.target.closest('.skill-card').classList.add('active')
-fadeBlockSkills.classList.add('active')
+        document.querySelector('body').classList.add('active')
+        event.target.closest('.skill-card').classList.add('active')
+        fadeBlockSkills.classList.add('active')
     })
 })
 
