@@ -167,6 +167,24 @@ body.active {
   background-color: rgba(0, 0, 0, 0.15);
 }
 
+.gradient-line {
+  display: inline;
+  background-image: rgba(200, 0, 255, 0.752) !important;
+  background-repeat: no-repeat;
+  background-position: center bottom 15px !important;
+  background-size: 100% 12px;
+}
+@media (max-width: 1244px) {
+  .gradient-line {
+    background-position: center bottom 12px;
+  }
+}
+@media (max-width: 631px) {
+  .gradient-line {
+    background-position: center bottom 6px;
+  }
+}
+
 .header {
   padding-top: 20.5px;
   padding-bottom: 20.5px;
@@ -634,7 +652,7 @@ body.active {
 }
 
 .avatar__shadow--third {
-  background-color: rgba(200, 0, 255, 0.7294117647);
+  background-color: rgba(200, 0, 255, 0.718);
   z-index: 3;
   transform: rotate(-79deg);
 }

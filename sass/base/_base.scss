@@ -91,3 +91,19 @@ html {
         background-color: rgba(0, 0, 0, 0.15);
     }
     }
+
+    .gradient-line{
+        display: inline;
+        background-repeat: no-repeat;
+        background-position: center bottom 15px;
+        background-size: 100% 12px;
+        background-image: linear-gradient(to left, $line-color);
+        
+                    @media (max-width: 1244px) {
+                        background-position: center bottom 12px;
+                    }
+        
+                    @media (max-width: 631px) {
+                        background-position: center bottom 6px;
+                    }
+        }
