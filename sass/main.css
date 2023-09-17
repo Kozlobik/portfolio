@@ -278,6 +278,9 @@ body.active {
   align-items: center;
   transition: transform 500ms;
 }
+.header__mobile-menu-list .menu-link {
+  margin-right: 0;
+}
 
 .header__mobile-menu-list.active {
   transform: translateY(0);
@@ -291,7 +294,7 @@ body.active {
   left: 0;
   width: 100%;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.362);
+  background-color: rgba(0, 0, 0, 0.717);
   transform: translateY(-100%);
   transition: transform 500ms;
   z-index: 2;

@@ -15,7 +15,7 @@ if(window.innerWidth <= 631){
     burger.addEventListener('click',function () {
         mobileMenu.classList.toggle('active')
         fadeBlockHeader.classList.toggle('active')
-    
+
     burgerLines.forEach((item)=>{
         item.classList.toggle('active')
     })
