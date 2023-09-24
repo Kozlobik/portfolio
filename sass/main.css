@@ -1026,4 +1026,71 @@ body.active {
 
 .burger__line--third.active {
   transform: rotate(-45deg) translateY(-14px);
+}
+
+.slider {
+  margin: 0 auto;
+}
+
+.slider__item {
+  background-color: #383232;
+  padding: 20px 50px;
+  max-width: 800px;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track {
+  display: flex;
+}
+
+.slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-30px);
+  margin-bottom: 50px;
+}
+
+.slick-dots li {
+  list-style: none;
+  margin: 0px 6px;
+}
+
+.slick-dots button {
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.slick-dots li.slick-active button {
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 35%;
+  width: 30px;
+  height: 30px;
+  z-index: 1;
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-size: 0;
+}
+
+.slick-prev {
+  left: 0;
+  background-image: url(/image/review/arrow.svg);
+  background-position: 50%;
+}
+
+.slick-next {
+  right: 0;
+  background-image: url(/image/review/arrow.svg);
+  background-position: 50%;
 }/*# sourceMappingURL=main.css.map */
