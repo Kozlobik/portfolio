@@ -1,22 +1,66 @@
 .slider {
     margin: 0 auto;
+    max-width: 800px;
 }
 .slider__item {
     background-color: $cardColor;
     padding: 20px 50px;
-    max-width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 .slider__guest {
+    display: flex;
+    align-items: center;
 }
 .slider__avatar {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+.slider__icon{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.wrapper-img{
+    width: 55px;
+    height: 55px;
+    overflow: hidden;
+    border-radius:  30% 70% 70% 30% / 30% 17% 83% 70% ;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    .slider__img{
+        width: 100%;
+        height: 100%;
+    }
 }
 .slider__guest-info {
 }
 .slider__nickname {
+    display: block;
+    font-size: 22px;
+    font-weight: 400;
 }
-.slider__job {
+.slider__job {   
+    display: block;
+    color: $headingColor;
+    font-weight: 900;
+    font-size: 16px;
+
 }
 .slider__review {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
 }
 
 .slick-list{
@@ -47,24 +91,24 @@
     background-color: transparent;
     border: 1px solid #fff;
 }
-.slick-arrow{
-    position: absolute;
-    top: 35%;
-    width: 30px;
-    height: 30px;
-    z-index: 1;
-    background-size: contain;
-    background-repeat: no-repeat;
+// .slick-arrow{
+//     position: absolute;
+//     top: 35%;
+//     width: 30px;
+//     height: 30px;
+//     z-index: 1;
+//     background-size: contain;
+//     background-repeat: no-repeat;
 
-    font-size:0;
-}
-.slick-prev{
-    left:0;
-    background-image: url(/image/review/arrow.svg);
-    background-position: 50%;
-}
-.slick-next{
-    right:0;
-    background-image: url(/image/review/arrow.svg);
-    background-position: 50%;
-}
+//     font-size:0;
+// }
+// .slick-prev{
+//     left:0;
+//     background-image: url(/image/review/arrow.svg);
+//     background-position: 50%;
+// }
+// .slick-next{
+//     right:0;
+//     background-image: url(/image/review/arrow.svg);
+//     background-position: 50%;
+// }
