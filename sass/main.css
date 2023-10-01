@@ -1031,6 +1031,7 @@ body.active {
 .slider {
   margin: 0 auto;
   max-width: 800px;
+  position: relative;
 }
 
 .slider__item {
@@ -1109,7 +1110,6 @@ body.active {
   align-items: center;
   justify-content: center;
   transform: translateY(-30px);
-  margin-bottom: 50px;
 }
 
 .slick-dots li {
@@ -1128,4 +1128,28 @@ body.active {
 .slick-dots li.slick-active button {
   background-color: transparent;
   border: 1px solid #fff;
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  z-index: 2;
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-size: 0;
+  transform: translateY(-75%);
+}
+
+.slick-prev {
+  left: -50px;
+  background-image: url(./../image/review/arrow-left.svg);
+  background-position: 50%;
+}
+
+.slick-next {
+  right: -50px;
+  background-image: url(./../image/review/arrow-right.svg);
+  background-position: 50%;
 }/*# sourceMappingURL=main.css.map */
