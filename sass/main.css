@@ -1037,10 +1037,17 @@ body.active {
 .slider__item {
   background-color: #383232;
   padding: 20px 50px;
+  margin: 0 15px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  border-radius: 10px;
+}
+@media (max-width: 631px) {
+  .slider__item {
+    padding: 0 15px 20px;
+  }
 }
 
 .slider__guest {
@@ -1096,6 +1103,11 @@ body.active {
   font-weight: 500;
   letter-spacing: 1px;
 }
+@media (max-width: 631px) {
+  .slider__review {
+    text-align: center;
+  }
+}
 
 .slick-list {
   overflow: hidden;
@@ -1110,6 +1122,11 @@ body.active {
   align-items: center;
   justify-content: center;
   transform: translateY(-30px);
+}
+@media (max-width: 631px) {
+  .slick-dots {
+    transform: translateY(-40px);
+  }
 }
 
 .slick-dots li {
@@ -1141,15 +1158,21 @@ body.active {
   font-size: 0;
   transform: translateY(-75%);
 }
+@media (max-width: 631px) {
+  .slick-arrow {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
 
 .slick-prev {
-  left: -50px;
+  left: 20px;
   background-image: url(./../image/review/arrow-left.svg);
   background-position: 50%;
 }
 
 .slick-next {
-  right: -50px;
+  right: 20px;
   background-image: url(./../image/review/arrow-right.svg);
   background-position: 50%;
 }/*# sourceMappingURL=main.css.map */
