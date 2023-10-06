@@ -85,10 +85,6 @@
     align-items: center;
     justify-content: center;
     transform: translateY(-30px);
-
-    @media(max-width: 631px){
-        transform: translateY(-40px);
-    }
 }
 .slick-dots li{
     list-style:none;
