@@ -38,6 +38,20 @@ const tlStart = gsap.timeline({})
     }
   })
 
+  gsap.from('.slider',{
+    stagger:0.3,
+    opacity:0,
+    y:200,
+    scrollTrigger:{
+        // markers:true,
+        trigger: '.reviews',
+        start: 'top 70%',
+        end:'30% 50%',
+        scrub: 2,
+        toggleActions: 'play none none reverse',
+    }
+  })
+
   function paralax() {
     const preview = document.querySelector('.preview');
     const initialX = preview.offsetLeft + preview.offsetWidth / 2;
