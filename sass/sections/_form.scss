@@ -1,14 +1,42 @@
 .form {
+    width: 650px;
+    margin: 0 auto;
+    padding: 15px 0;
+    row-gap: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: $cardColor;
+    border-radius: 10px;
 }
 .form__item {
 }
 .form__fake-placeholder {
 }
-.form__message {
+
+.form__input,
+.form__message{
+    background-color: $cardColor;       
+    color: $textColor;
+    padding: 10px;
+    font-size: 20px;
 }
+
 .form__input{
+    border-bottom: 2px solid $headingColor;
+    display: inline-block;
+    width: 600px;
 
 }
+.form__message {
+    border: 2px solid $headingColor;
+    resize: none;
+    border-radius: 10px;
+    width: 600px;
+    min-height: 200px;
+    max-height: 400px;
+}
+
 .form__submit{
     
 }
