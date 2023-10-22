@@ -1,17 +1,28 @@
 .form {
     width: 650px;
     margin: 0 auto;
-    padding: 15px 0;
+    padding: 40px 0 25px;
     row-gap: 50px;
     display: flex;
     align-items: center;
     flex-direction: column;
     background-color: $cardColor;
     border-radius: 10px;
+
+    @media (max-width: 1244px) {
+        width: 100%;
+    }
 }
 .form__item {
+    position: relative;
+
 }
 .form__fake-placeholder {
+    position: absolute;
+    top: 9px;
+    left: 11px;
+    color: rgba(240, 227, 202, 0.699);
+    transition: 400ms;
 }
 
 .form__input,
@@ -20,23 +31,65 @@
     color: $textColor;
     padding: 10px;
     font-size: 20px;
+    width: 600px;
+
+    @media (max-width: 1244px) {
+        width: 550px;
+    }
+
+    @media (max-width: 631px) {
+        width: 333px;
+    }
 }
 
 .form__input{
     border-bottom: 2px solid $headingColor;
     display: inline-block;
-    width: 600px;
-
 }
 .form__message {
-    border: 2px solid $headingColor;
+    border-bottom: 2px solid $headingColor;
     resize: none;
-    border-radius: 10px;
-    width: 600px;
+    // border-radius: 0 0 10px 10px;
     min-height: 200px;
     max-height: 400px;
+    border-top: none;
+    outline: none;
 }
 
 .form__submit{
-    
+    border-radius: 10px;
+    padding: 12px 20px;
+    color: $textColor;
+    font-weight: 500;
+    font-size: 20px;
+    background-color: $headingColor !important;
+    transition: 400ms;
+
+    &:hover{
+        background-color: $textColor !important;
+        color: $headingColor;
+        box-shadow: 0 3px 5px #cbc0ab, inset 0 0 2px 2px #cbc0ab;
+    }
+
+    &:active{
+        transition: 100ms;
+        transform: translateY(2px);
+    }
 }
+
+// Animation for placeholder
+
+.form__fake-placeholder.focus{
+    color: $headingColor;
+    transform: translateY(-130%) scale(1.1);
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    text-decoration-color: rgb(143, 60, 166);
+    text-decoration-thickness: 3px;
+    font-weight: 700;
+}
+// .form__input.focus,
+// .form__message.focus{
+//     border-color: $textColor;
+// }
+

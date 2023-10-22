@@ -56,3 +56,27 @@ cardBtn.forEach(function(item){
     })
 })
 
+// Form animation
+
+const placeholder = document.querySelectorAll('[data-placeholder]');
+
+placeholder.forEach(function(item){
+
+    item.addEventListener('focus', function () {
+        item.nextElementSibling.classList.add('focus')
+        item.classList.add('focus')
+    })
+
+    item.addEventListener('blur', function () {
+        if (item.value.length > 0){
+            item.nextElementSibling.classList.add('focus')
+            item.classList.add('focus')
+        }
+        else{
+            item.nextElementSibling.classList.remove('focus')
+            item.classList.remove('focus')
+        }
+        
+    })
+}
+)
