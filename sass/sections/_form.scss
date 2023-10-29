@@ -29,9 +29,11 @@
 .form__message{
     background-color: $cardColor;       
     color: $textColor;
+    border-bottom: 2px solid $headingColor;
     padding: 10px;
     font-size: 20px;
     width: 600px;
+    display: block;
 
     @media (max-width: 1244px) {
         width: 550px;
@@ -43,11 +45,8 @@
 }
 
 .form__input{
-    border-bottom: 2px solid $headingColor;
-    display: inline-block;
 }
 .form__message {
-    border-bottom: 2px solid $headingColor;
     resize: none;
     // border-radius: 0 0 10px 10px;
     min-height: 200px;
@@ -93,3 +92,15 @@
 //     border-color: $textColor;
 // }
 
+.error{
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.form__message.error{
+    border-color: red;
+}
+
+.form__input.error{
+    border-color: red;
+}

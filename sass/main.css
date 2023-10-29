@@ -531,9 +531,11 @@ body.active {
 .form__message {
   background-color: #383232;
   color: #f0e3ca;
+  border-bottom: 2px solid #6d65cb;
   padding: 10px;
   font-size: 20px;
   width: 600px;
+  display: block;
 }
 @media (max-width: 1244px) {
   .form__input,
@@ -548,13 +550,7 @@ body.active {
   }
 }
 
-.form__input {
-  border-bottom: 2px solid #6d65cb;
-  display: inline-block;
-}
-
 .form__message {
-  border-bottom: 2px solid #6d65cb;
   resize: none;
   min-height: 200px;
   max-height: 400px;
@@ -589,6 +585,19 @@ body.active {
   text-decoration-color: rgb(143, 60, 166);
   text-decoration-thickness: 3px;
   font-weight: 700;
+}
+
+.error {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.form__message.error {
+  border-color: red;
+}
+
+.form__input.error {
+  border-color: red;
 }
 
 .info {

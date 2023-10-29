@@ -450,28 +450,28 @@
                 </h6>
             </div>
 
-            <form action="#!" class="form">
+            <form action="#!" class="form" id="form">
 
-                <label for="" class="form__item">
-                    <input type="email" class="form__input" data-placeholder>
+                <div class="form__item">
                     <span class="form__fake-placeholder">
-                        E-mail
+                        Name
                     </span>
-                </label>
+                    <input type="text" class="form__input" data-placeholder name="name" id="name"> 
+                </div>
 
-                <label for="" class="form__item">
-                    <input type="tel" class="form__input" data-placeholder>
+                <div class="form__item">
                     <span class="form__fake-placeholder">
                         Phone Number
                     </span>
-                </label>
+                    <input type="tel" class="form__input" data-placeholder name="tel">
+                </div>
 
-                <label for="" class="form__item">
-                    <textarea name="" id="" class="form__message" data-placeholder></textarea>
+                <div class="form__item">
                     <span class="form__fake-placeholder">
                         Message
                     </span>
-                </label>
+                    <textarea name="message" id="" class="form__message" data-placeholder></textarea>
+                </div>
 
                 <input value="Submit" type="submit" class="form__submit">
             </form>
@@ -559,6 +559,8 @@
 <script src="./js/main.js"></script>
 <script src="./js/slick.min.js"></script>
 <script src="./js/slider.js"></script>
+<script src="./libs/jquery-validation/jquery.validate.min.js"></script>
+<script src="./js/validate.js"></script>
 
 </body>
 </html>
